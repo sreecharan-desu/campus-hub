@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
 const connectDB = async () => {
     await mongoose.connect('mongodb+srv://srecharandesu:***REMOVED***@cluster0.a9berin.mongodb.net/CampusHuB')
