@@ -1,7 +1,11 @@
+require('dotenv').config();
 const mongoose = require('mongoose');
+if (!process.env.MONGODB_URI) {
+  throw new Error('MONGODB_URI is not set. Copy .env.example to .env and fill it in.');
+}
 
 const connectDB = async () => {
-    await mongoose.connect('mongodb+srv://srecharandesu:***REMOVED***@cluster0.a9berin.mongodb.net/CampusHuB')
+    await mongoose.connect(process.env.MONGODB_URI)
 }
 
 connectDB();

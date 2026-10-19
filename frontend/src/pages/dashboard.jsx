@@ -155,7 +155,7 @@ export default function Dashboard() {
         return (
             <div className="flex items-center justify-center h-screen bg-gray-50">
                 <div className="text-center p-8 bg-white rounded-lg shadow-lg max-w-md">
-                    <div className="text-red-500 text-5xl mb-4">⚠️</div>
+                    <div className="text-red-500 text-5xl mb-4"></div>
                     <h2 className="text-2xl font-bold text-gray-800 mb-2">Error Loading Dashboard</h2>
                     <p className="text-gray-600 mb-4">{error}</p>
                     <button
@@ -210,11 +210,11 @@ export default function Dashboard() {
             <div className="p-4">
                 <h3 className="font-semibold text-lg text-gray-800">{event.title}</h3>
                 <div className="mt-2 flex items-center text-sm text-gray-600">
-                    <span className="mr-2">📅</span>
+                    <span className="mr-2"></span>
                     <span>{formatEventDateTime(event.date, event.time)}</span>
                 </div>
                 <div className="mt-1 flex items-center text-sm text-gray-600">
-                    <span className="mr-2">📍</span>
+                    <span className="mr-2"></span>
                     <span>{event.location || "On Campus"}</span>
                 </div>
                 <p className="mt-3 text-gray-600 text-sm line-clamp-2">

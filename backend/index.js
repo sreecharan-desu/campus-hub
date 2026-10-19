@@ -59,18 +59,18 @@ const emailConfig = {
         const username = user.username ? user.username : user.email.split("@")[0];
         return this.sendEmail(
             user.email,
-            "🎉 Welcome to CampusHub! 🚀",
+            "Welcome to CampusHub!",
             `
             <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #e0e0e0; border-radius: 8px;">
-                <h1 style="color: #4a6ee0; text-align: center;">Welcome to CampusHub! 🚀</h1>
-                <p style="font-size: 16px; line-height: 1.5;">Hey <strong>${username}</strong>! 👋</p>
-                <p style="font-size: 16px; line-height: 1.5;">Welcome to <strong>CampusHub</strong> – your one-stop destination for campus events! 🎓🎉</p>
-                <p style="font-size: 16px; line-height: 1.5;">Explore exciting meetups, workshops, and activities happening around you. Never miss an event again! 🔥</p>
+                <h1 style="color: #4a6ee0; text-align: center;">Welcome to CampusHub!</h1>
+                <p style="font-size: 16px; line-height: 1.5;">Hey <strong>${username}</strong>!</p>
+                <p style="font-size: 16px; line-height: 1.5;">Welcome to <strong>CampusHub</strong> – your one-stop destination for campus events!</p>
+                <p style="font-size: 16px; line-height: 1.5;">Explore exciting meetups, workshops, and activities happening around you. Never miss an event again!</p>
                 <div style="text-align: center; margin: 30px 0;">
                     <a href="https://srees-campushub.vercel.app/" style="background-color: #4a6ee0; color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px; font-weight: bold;">Visit CampusHub</a>
                 </div>
                 <p style="font-size: 16px; line-height: 1.5;">If you have any questions, we're here to help.</p>
-                <p style="font-size: 16px; line-height: 1.5;">Happy exploring! 🚀</p>
+                <p style="font-size: 16px; line-height: 1.5;">Happy exploring!</p>
                 <p style="font-size: 16px; line-height: 1.5;"><strong>Team CampusHub</strong></p>
                 <hr style="border: none; border-top: 1px solid #e0e0e0; margin: 20px 0;">
                 <p style="font-size: 14px; color: #777; text-align: center;">
@@ -84,26 +84,26 @@ const emailConfig = {
         const username = user.username ? user.username : user.email.split("@")[0];
         return this.sendEmail(
             user.email,
-            `🎟️ You're Registered: ${event.title}!`,
+            `You're Registered: ${event.title}!`,
             `
             <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #e0e0e0; border-radius: 8px;">
-                <h1 style="color: #4a6ee0; text-align: center;">You're Registered! 🎉</h1>
+                <h1 style="color: #4a6ee0; text-align: center;">You're Registered!</h1>
                 <p style="font-size: 16px; line-height: 1.5;">Hey <strong>${username}</strong>!</p>
-                <p style="font-size: 16px; line-height: 1.5;">Awesome! You've successfully registered for <strong>${event.title}</strong>! 🎉</p>
+                <p style="font-size: 16px; line-height: 1.5;">Awesome! You've successfully registered for <strong>${event.title}</strong>!</p>
                 
                 <div style="background-color: #f8f9fa; border-radius: 6px; padding: 16px; margin: 20px 0;">
-                    <p style="margin: 8px 0;"><strong>📅 Date:</strong> ${event.date}</p>
-                    <p style="margin: 8px 0;"><strong>⏰ Time:</strong> ${event.time}</p>
-                    <p style="margin: 8px 0;"><strong>📍 Location:</strong> ${event.location}</p>
+                    <p style="margin: 8px 0;"><strong>Date:</strong> ${event.date}</p>
+                    <p style="margin: 8px 0;"><strong>Time:</strong> ${event.time}</p>
+                    <p style="margin: 8px 0;"><strong>Location:</strong> ${event.location}</p>
                 </div>
                 
-                <p style="font-size: 16px; line-height: 1.5;">We can't wait to see you there! 🙌</p>
+                <p style="font-size: 16px; line-height: 1.5;">We can't wait to see you there!</p>
                 
                 <div style="text-align: center; margin: 30px 0;">
                     <a href="https://srees-campushub.vercel.app/" style="background-color: #4a6ee0; color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px; font-weight: bold;">View Event Details</a>
                 </div>
                 
-                <p style="font-size: 16px; line-height: 1.5;">Cheers,<br><strong>Team CampusHub 🚀</strong></p>
+                <p style="font-size: 16px; line-height: 1.5;">Cheers,<br><strong>Team CampusHub</strong></p>
                 
                 <hr style="border: none; border-top: 1px solid #e0e0e0; margin: 20px 0;">
                 <p style="font-size: 14px; color: #777; text-align: center;">
@@ -119,26 +119,26 @@ const emailConfig = {
 
         return this.sendEmail(
             users.map(user => user.email).join(", "),
-            `🚀 New Event: ${event.title}!`,
+            `New Event: ${event.title}!`,
             `
             <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #e0e0e0; border-radius: 8px;">
-                <h1 style="color: #4a6ee0; text-align: center;">New Event Alert! 🔔</h1>
-                <p style="font-size: 16px; line-height: 1.5;">Hey there! 🎉</p>
-                <p style="font-size: 16px; line-height: 1.5;">A brand-new event <strong>"${event.title}"</strong> is happening soon! Don't miss out! 🔥</p>
+                <h1 style="color: #4a6ee0; text-align: center;">New Event Alert!</h1>
+                <p style="font-size: 16px; line-height: 1.5;">Hey there!</p>
+                <p style="font-size: 16px; line-height: 1.5;">A brand-new event <strong>"${event.title}"</strong> is happening soon! Don't miss out!</p>
                 
                 <div style="background-color: #f8f9fa; border-radius: 6px; padding: 16px; margin: 20px 0;">
-                    <p style="margin: 8px 0;"><strong>📅 Date:</strong> ${event.date}</p>
-                    <p style="margin: 8px 0;"><strong>⏰ Time:</strong> ${event.time}</p>
-                    <p style="margin: 8px 0;"><strong>📍 Location:</strong> ${event.location}</p>
+                    <p style="margin: 8px 0;"><strong>Date:</strong> ${event.date}</p>
+                    <p style="margin: 8px 0;"><strong>Time:</strong> ${event.time}</p>
+                    <p style="margin: 8px 0;"><strong>Location:</strong> ${event.location}</p>
                 </div>
                 
-                <p style="font-size: 16px; line-height: 1.5;">Be part of the experience and make unforgettable memories! 💡🎭</p>
+                <p style="font-size: 16px; line-height: 1.5;">Be part of the experience and make unforgettable memories!</p>
                 
                 <div style="text-align: center; margin: 30px 0;">
                     <a href="https://srees-campushub.vercel.app/" style="background-color: #4a6ee0; color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px; font-weight: bold;">Register Now</a>
                 </div>
                 
-                <p style="font-size: 16px; line-height: 1.5;">See you there!<br><strong>Team CampusHub 🚀</strong></p>
+                <p style="font-size: 16px; line-height: 1.5;">See you there!<br><strong>Team CampusHub</strong></p>
                 
                 <hr style="border: none; border-top: 1px solid #e0e0e0; margin: 20px 0;">
                 <p style="font-size: 14px; color: #777; text-align: center;">
