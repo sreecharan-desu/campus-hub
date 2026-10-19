@@ -146,7 +146,7 @@ export default function AdminSignin() {
                                 className="absolute inset-y-0 right-3 flex items-center text-gray-400"
                                 onClick={() => setShowPassword(!showPassword)}
                             >
-                                {showPassword ? "🙈" : "👁️"}
+                                {showPassword ? "" : ""}
                             </button>
                         </div>
                         {errors.password && <p className="text-red-500 text-sm mt-1">{errors.password}</p>}

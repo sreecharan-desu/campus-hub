@@ -137,7 +137,7 @@ function Footer() {
         </div>
         <div className="text-gray-400 text-sm text-center flex items-center space-x-1">
           <span>Made with</span>
-          <span className="text-red-500 animate-pulse text-lg">♥</span>
+          <span className="text-red-500 animate-pulse text-lg"></span>
           <span>by</span>
           <a
             href="https://github.com/sreecharan-desu"

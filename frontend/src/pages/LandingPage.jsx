@@ -19,7 +19,7 @@ export default function LandingPage() {
   const features = [
     {
       title: "Event Discovery",
-      icon: "🔍",
+      icon: "",
       description: "Browse through upcoming campus events in a clean, organized dashboard"
     },
     {
@@ -29,12 +29,12 @@ export default function LandingPage() {
     },
     {
       title: "Event Creation",
-      icon: "✏️",
+      icon: "",
       description: "Organizers can easily create and manage events with a simple form"
     },
     {
       title: "Smart Reminders",
-      icon: "🔔",
+      icon: "",
       description: "Get timely notifications for events you've registered for"
     }
   ];
