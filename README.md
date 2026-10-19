@@ -55,7 +55,7 @@ The application connects to a MongoDB Atlas cluster using Mongoose. The connecti
 const mongoose = require('mongoose');
 
 const connectDB = async () => {
-    await mongoose.connect('mongodb+srv://srecharandesu:***REMOVED***@cluster0.a9berin.mongodb.net/CampusHuB')
+    await mongoose.connect(process.env.MONGODB_URI)
 }
 
 connectDB();
